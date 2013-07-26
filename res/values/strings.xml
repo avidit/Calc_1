@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EasyCalc</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="val_1">Enter First Number</string>
+    <string name="val_2">Enter Second Number</string>
+    <string name="label_submit">Submit</string>
+    <string name="label_clear">Clear</string>
+    <string name="label_choose">Choose an Operator</string>
+    
+    <string name="opp_prompt">Choose an Operator</string>
+    <string-array name="opp_list">
+        <item>add</item>
+        <item>sub</item>
+        <item>prod</item>
+        <item>divide</item>
+    </string-array>
+    
+</resources>
