@@ -17,6 +17,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="10dp"
         android:ems="10"
+        android:gravity="right"
         android:inputType="numberDecimal"
         android:width="100dp" >
 
@@ -30,6 +31,7 @@
         android:layout_alignLeft="@+id/editText1"
         android:layout_below="@+id/editText1"
         android:ems="10"
+        android:gravity="right"
         android:inputType="numberDecimal"
         android:width="100dp" >
     </EditText>
