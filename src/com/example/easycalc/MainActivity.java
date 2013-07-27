@@ -19,31 +19,32 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        EditText val1 = (EditText) findViewById(R.id.editText1);
-    	EditText val2 = (EditText) findViewById(R.id.editText2);
-    	final EditText val3 = (EditText) findViewById(R.id.editText3);
-    
-    	double num1=Double.parseDouble(val1.getText().toString());
-    	double num2=Double.parseDouble(val2.getText().toString());
-    
-    	Spinner Text = (Spinner) findViewById(R.id.spinner1);
-    	myoperator=Text.getSelectedItem().toString();
-    
-    	if(myoperator.equals("add"))
-    		res = num1+num2;
-    		
-    	if(myoperator.equals("sub"))
-    	 	res = num1-num2;
-    	
-    	if(myoperator.equals("prod"))
-    	 	res = num1*num2;
-    	
-    	if(myoperator.equals("divide"))
-    	 	res = num1/num2;
-    		
+        	
     	Button submit = (Button) findViewById(R.id.button1);
         submit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+            	
+            	EditText val1 = (EditText) findViewById(R.id.editText1);
+            	EditText val2 = (EditText) findViewById(R.id.editText2);
+            	final EditText val3 = (EditText) findViewById(R.id.editText3);
+            
+            	double num1=Double.parseDouble(val1.getText().toString());
+            	double num2=Double.parseDouble(val2.getText().toString());
+            
+            	Spinner Text = (Spinner) findViewById(R.id.spinner1);
+            	myoperator=Text.getSelectedItem().toString();
+            
+            	if(myoperator.equals("add"))
+            		res = num1+num2;
+            		
+            	if(myoperator.equals("sub"))
+            	 	res = num1-num2;
+            	
+            	if(myoperator.equals("prod"))
+            	 	res = num1*num2;
+            	
+            	if(myoperator.equals("divide"))
+            	 	res = num1/num2;
             	val3.setText(new Double(res).toString());
             }
         });
